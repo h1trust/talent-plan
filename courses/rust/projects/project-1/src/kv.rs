@@ -37,7 +37,7 @@ impl KvStore {
     ///
     /// Returns `None` if the given key does not exist.
     pub fn get(&self, key: String) -> Option<String> {
-        self.map.get(&key).cloned()
+        self.map.get(&key).cloned();
     }
 
     /// Remove a given key.
